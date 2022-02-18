@@ -51,7 +51,7 @@ const debounce = (func, delay) => {
 };
 
 document.getElementById("input-text").addEventListener("keyup", () => {
-  debounce(translateText, 1000);
+  debounce(translateText, 500);
 });
 
 let input = document.getElementById("input-text");
