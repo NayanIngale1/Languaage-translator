@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --blue: #38a5ff;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: none;
+  border: none; */
+  text-decoration: none;
+  /* text-transform: capitalize; */
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background: var(--blue);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+body {
+  background: rgba(228, 228, 228, 0.1);
+}
+
+.container {
+  border: 3px solid #cecece;
+  margin: 1rem auto;
+  width: 90%;
+  display: flex;
+  border-radius: 10px;
+  /* padding: 0.5rem 1.5rem; */
+}
+h1 {
+  font-size: 5rem;
+  color: var(--blue);
+  width: fit-content;
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+.input-lan,
+.output-lan {
+  flex: 1;
+  font-size: 2rem;
+}
+.input-lan {
+  border-right: 3px solid #cecece;
+}
+.head {
+  display: flex;
+  padding: 2rem 1.5rem;
+  border-bottom: 3px solid #cecece;
+  align-items: center;
+}
+.head select {
+  font-size: 1.5rem;
+  border: 1px solid lightgrey;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+.head select::-webkit-scrollbar {
+  display: none;
+}
+.input-text {
+  width: 100%;
+}
+.input-text textarea {
+  width: 100%;
+  height: 50%;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+}
+
+#start-btn{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    cursor: pointer;
+
+}
+#mic-on{
+    font-size: 3rem;
+  margin: 0 1rem;
+  color: var(--blue);
+}
+
+/* .translate-btn {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+  display: block;
+  color: var(--blue);
+  background-color: #f7f7f7;
+  outline: 1px solid var(--blue);
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s linear;
+}
+.translate-btn:hover {
+  color: white;
+  background-color: #38a5ff;
+  cursor: pointer;
+} */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90vw;
+    padding: 2rem 2rem;
+    flex-direction: column;
+  }
+  .input-lan {
+    border: 0;
+
+    border-bottom: 3px solid #cecece;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .input-text textarea {
+    width: 100%;
+    height: 30vh;
+  }
+}
+@media (max-width: 426px) {
+  .container {
+    width: 90vw;
+    padding: 1rem 1rem;
+    flex-direction: column;
+  }
+  .input-lan {
+    border: 0;
+
+    border-bottom: 3px solid #cecece;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .input-text textarea {
+    width: 100%;
+    height: 30vh;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Language Translator</title>
+  </head>
+
+  <body>
+    <h1>Translate the text</h1>
+    <div class="container">
+      <div class="input-lan">
+        <div class="head">
+          <p>Detect Language :</p>
+          <select id="input-language">
+            <option value="auto">Auto Detect</option>
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="az">Azerbaijani</option>
+            <option value="zh">Chinese</option>
+            <option value="cs">Czech</option>
+            <option value="nl">Dutch</option>
+            <option value="fi">Finnish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="hi">Hindi</option>
+            <option value="hu">Hungarian</option>
+            <option value="id">Indonesian</option>
+            <option value="ga">Irish</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="pl">Polish</option>
+            <option value="pt">Portuguese</option>
+            <option value="ru">Russian</option>
+            <option value="es">Spanish</option>
+            <option value="sv">Swedish</option>
+            <option value="tr">Turkish</option>
+            <option value="uk">Ukranian</option>
+            <option value="vi">Vietnamese</option>
+          </select>
+        </div>
+        <div class="input-text">
+          <textarea
+            id="input-text"
+            rows="10"
+            placeholder="Type here..."
+          ></textarea>
+          <span id="start-btn"
+            ><i class="material-icons" id="mic-on"> mic </i>Tap to speek</span
+          >
+        </div>
+      </div>
+      <div class="output-lan">
+        <div class="head">
+          <p>Results in :</p>
+          <select id="output-language">
+            <option value="hi">Hindi</option>
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="az">Azerbaijani</option>
+            <option value="zh">Chinese</option>
+            <option value="cs">Czech</option>
+            <option value="nl">Dutch</option>
+            <option value="fi">Finnish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="hu">Hungarian</option>
+            <option value="id">Indonesian</option>
+            <option value="ga">Irish</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="pl">Polish</option>
+            <option value="pt">Portuguese</option>
+            <option value="ru">Russian</option>
+            <option value="es">Spanish</option>
+            <option value="sv">Swedish</option>
+            <option value="tr">Turkish</option>
+            <option value="uk">Ukranian</option>
+            <option value="vi">Vietnamese</option>
+          </select>
+        </div>
+        <div class="input-text">
+          <textarea
+            id="result-text"
+            rows="10"
+            placeholder="Translated text"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- <button onclick="translateText()" class="translate-btn">Translate</button> -->
+  </body>
+</html>
+<script src="./app.js"></script>
