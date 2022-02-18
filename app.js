@@ -117,3 +117,7 @@ const stop = () => {
     recognition.onspeechend();
   }, 1000);
 };
+
+document.getElementById("output-language").addEventListener("onchange", () => {
+  debounce(translateText, 400);
+});
